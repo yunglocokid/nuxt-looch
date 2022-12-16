@@ -55,10 +55,6 @@ mark {
 	}
 }
 
-.bigComment{
-	font-size: 16px;
-}
-
 a{
 	text-decoration: none !important;
 }
@@ -135,6 +131,8 @@ a{
 	background-color: $main-blue
 }
 
+//----------------------------------------------------------
+
 div#example2_length.dataTables_length label {
 	display: inline-block;
 	font-weight: 400;
@@ -161,7 +159,6 @@ div#example2_filter.dataTables_filter {
 	margin: 10px 10px 0px 0px;
 	padding: 20px;
 }
-
 
 div#example2_length.dataTables_length {
 	margin: 10px 10px 0px 0px;
