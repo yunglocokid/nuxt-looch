@@ -1,0 +1,172 @@
+.main {
+	min-height: 73.5vh;
+	display: flex;
+	flex-direction: column;
+
+
+	// Отступ для фиксированного навбара
+	margin-top: 75px;
+	@media (min-width: 991px) and (max-width: 1200px) {
+		& {
+			margin-top: 160px;
+		}
+	}
+}
+
+.logo {
+	content: url(~/static/logo.png)
+}
+
+a {
+	color: $link;
+
+	&:hover {
+		color: $light-blue
+	}
+}
+
+footer {
+	margin-top: 40px;
+	z-index: 9999;
+}
+
+body {
+	min-width: 360px;
+}
+
+mark {
+	background-color: $light-blue;
+	color: white;
+}
+
+.BlueButtonContainer {
+	width: 97%;
+	display: inline-flex;
+	justify-content: flex-end;
+}
+
+.commentary {
+	cursor: zoom-in;
+	font-size: 10px;
+	transition: 0.2s ease;
+
+	&:hover {
+		font-size: 16px;
+	}
+}
+
+.bigComment{
+	font-size: 16px;
+}
+
+a{
+	text-decoration: none !important;
+}
+
+.table__link_container {
+	text-decoration: none;
+	text-align: center;
+}
+
+.table__text {
+	text-align: center;
+}
+
+.table__link {
+	color: $link;
+	text-decoration: none !important;
+	text-align: center;
+	font-weight: bold;
+	transition: transform 0.3s ease-in-out ;
+
+	&:hover {
+		text-decoration: none;
+		transform: scaleY(1.03);
+		cursor: pointer;
+	}
+}
+
+// Пагинация таблиц
+.page-item.active .page-link {
+	z-index: 4;
+	color: $text-color;
+	background-color: $main-blue;
+}
+
+// Multiselect
+.multiselect__tag {
+	position: relative;
+	display: inline-block;
+	padding: 4px 26px 4px 10px;
+	border-radius: 5px;
+	margin-right: 10px;
+	color: #fff;
+	line-height: 1;
+	background: $main-blue;
+	margin-bottom: 5px;
+	white-space: nowrap;
+	overflow: hidden;
+	max-width: 100%;
+	text-overflow: ellipsis;
+}
+
+.multiselect__option--highlight {
+	background: $main-blue;
+	outline: none;
+	color: #fff;
+}
+
+.multiselect__tag-icon:after {
+	content: "\D7";
+	color: #000;
+	font-size: 14px;
+
+	&:hover {
+		border-top-color: $main-blue;
+	}
+}
+
+
+.multiselect__tags {
+	border: 0px solid #e8e8e8;
+}
+
+.multiselect__tag-icon:hover {
+	background-color: $main-blue
+}
+
+div#example2_length.dataTables_length label {
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border: 1px solid transparent;
+	padding: 0.375rem 0.75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: 0.25rem;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	color: white;
+	background-color: rgba(4, 97, 174, 0.91);
+	color: white;
+	font-weight: bolder;
+}
+
+div#example2_filter.dataTables_filter {
+	margin: 10px 10px 0px 0px;
+	padding: 20px;
+}
+
+
+div#example2_length.dataTables_length {
+	margin: 10px 10px 0px 0px;
+	padding: 20px;
+}
+
+
+
